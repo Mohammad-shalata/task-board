@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>My Task Board - Mohammad Shalata</title>
+</head>
+
+<body onload="ifLocalStorageExistPrint()">
+    <div id="body" class=" container-fluid">
+        <div class="p-0 m-0 mt-5 row-fluid">
+            <!-- the title of page -->
+            <div id="title" class="offset-xl-4 col-xl-5 offset-md-3 col-md-9 offset-sm-3 col-sm-9 offset-2 col-12">
+                <img id="title" src="assets/images/title.png">
+            </div>
+        </div>
+        <!-- the text area -->
+        <div class="p-0 m-0 mt-4 ml-xl-0  ml-lg  ml-md-0  ml-sm-0 ml-3 row-fluid">
+            <div class="offset-xl-3 col-xl-5 offset-md-2 col-md-8 offset-sm-2 col-sm-8 offset-1 col-10 "> <textarea
+                    name="input" id="txtArea" cols="10" rows="3"></textarea></div>
+        </div>
+
+        <!-- row of buttons and inputs -->
+        <div class="p-0  form-group">
+            <!-- the buttons col -->
+            <div class=" col-1 col-sm-2 offset-3 ">
+                <button id="enter" type="button" class="btn btn-light" onclick="enterNote()">Enter</button>
+                <button id="clear" type="button" class="btn btn-light" onclick="clearTextArea()">Clear</button>
+            </div>
+            <!-- the inputs and icons of inputs col -->
+            <div class=" col-12 offset-2 ">
+                <div class="col-1 col-md-4 row">
+                    <div class=" col-4">
+                        <div class="input-container">
+                            <input id="timeIn" class="form-control input-field" type="time" value="">
+                        </div>
+                    </div>
+                    <div class="p-0 col-5 ">
+                        <div class="input-container">
+                            <input id="dateIn" class="form-control input-field" type="date" value="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="offset-1">
+            <!-- the alert that pops when user enters wrong input -->
+            <div class="offset-3">
+                <div id="alert" class="row offset-6 container"></div>
+            </div>
+            <!-- the container of all the notes -->
+            <div class="container-fluid">
+                <div id="notes" class="offset-xl-0 offset-lg-1 offset-md-1 offset-sm-3 offset-3  row">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <footer>
+        <div class="col-3 offset-4">
+            <p class="copyright"><strong>Copyright &copy; 2021 by Mohammad Shalata</strong> </p>
+        </div>
+    </footer>
+</body>
+
+</html>

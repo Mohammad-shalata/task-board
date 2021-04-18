@@ -1,0 +1,190 @@
+body {
+    width: 100%;
+    padding: 10;
+    margin: 10;
+    min-height: 100%;
+    background-image: url(assets/images/tile.jpg);
+}
+
+#title {
+    width: 100%;
+    position: relative;
+    left: -6%;
+}
+
+#txtArea {
+    background-image: url(assets/images/formbg.jpg);
+    background-position: left center;
+    background-repeat: round;
+    border: 5px solid #262626;
+    border-radius: 28px;
+    width: 100%;
+    height: 280px;
+    padding-top: 25px;
+    padding-left: 90px;
+    font-family: 'Indie Flower', cursive;
+    font-size: 23px;
+    color: black;
+    line-height: 1.50;
+    stroke: #7f7f4c;
+    -moz-box-shadow: inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow: inset 0 0 10px #000000;
+}
+
+.btn {
+    width: 48.2%;
+    outline: none !important;
+}
+
+#enter {
+    background-color: greenyellow;
+}
+#clear {
+    background-color: red;
+}
+.input-field{
+    background-color: rgba(79, 218, 223, 0.829);
+    color: black;
+}
+.btn:focus {
+    -moz-box-shadow: inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow: inset 0 0 10px #000000;
+}
+
+.input-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.icon {
+    padding: 20px;
+    background: black;
+    color: red;
+    min-width: 50px;
+    text-align: center;
+    position: relative;
+    left: 5px;
+    z-index: 500;
+}
+
+.input-field {
+    width: 100%;
+    outline: none;
+}
+
+.note {
+    background-image: url(assets/images/notebg.png);
+    background-size: cover;
+    background-position: center;
+    width: 100px;
+    height: 300px;
+    float: left;
+    
+    
+    
+}
+
+.number {
+    padding: 20px;
+    font-size: 20px;
+    position: absolute;
+    text-align: center;
+    font-family: cursive;
+    color: black;
+    font-weight: bold;
+}
+
+#icon {
+    font-size: 20px;
+    color: black;
+    left: 75%;
+    top: 1px;
+    position: relative;
+    display: inline-block;
+    opacity: 0;
+    transition: 1s;
+}
+
+.note:hover #icon {
+    opacity: 1;
+}
+
+#icon:hover {
+    color: red;
+}
+
+.Notetextarea {
+    margin-top: 15px;
+    border-radius: 20px;
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    font-family: 'Charm', cursive;
+    color: #4c4c2d;
+    font-size: 23px;
+    overflow: hidden;
+    resize: none;
+}
+
+.Notetextarea:hover {
+    overflow: auto;
+}
+
+textarea::-webkit-scrollbar {
+    width: 9px;
+    background-color: none;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba(0, 0, 255, 0.623);
+}
+
+#icon .tooltiptext {
+    width: 120px;
+    bottom: 140%;
+    left: 50%;
+    background-color: red;
+    color: black;
+    text-align: center;
+    margin-left: -60px;
+    padding: 1px 0;
+    border-radius: 6px;
+    position: absolute;
+    z-index: 600;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#icon:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.failure {
+    color: wheat;
+    background-color: red;
+    opacity: 0.8;
+    border-radius: 10px 50px;
+    width: 39vw;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    display: none;
+    position: absolute;
+    font-style: italic;
+    z-index: 111;
+}
+
+body footer .copyright {
+    background-color: #333333;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    bottom: 0;
+}
